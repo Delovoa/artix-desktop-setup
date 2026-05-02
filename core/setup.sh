@@ -13,8 +13,6 @@ sudo pacman -Syu --noconfirm
 # 2. Install yay
 # -----------------------------
 echo "==> Installing core packages..."
-
-sudo pacman -Syu
 sudo pacman -S --needed base-devel git
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -26,7 +24,6 @@ rm -rf yay
 # 3. Install Zen Kernel
 # -----------------------------
 echo "==> Installing Zen Kernel..."
-
 sudo pacman -S linux-zen linux-zen-headers
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
@@ -34,7 +31,6 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 # 4. Install Informant
 # -----------------------------
 echo "==> Installing Informant..."
-
 yay -S informant
 sudo usermod -aG informant $USER
 
@@ -42,7 +38,6 @@ sudo usermod -aG informant $USER
 # 5. Install Snapper
 # -----------------------------
 echo "==> Installing Snapper..."
-
 sudo pacman -S snapper
 sudo snapper -c root create-config /
 
