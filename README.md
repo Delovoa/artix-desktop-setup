@@ -75,7 +75,7 @@ Open a terminal and run the following commands:
 ```bash
 sudo pacman -Syu
 sudo pacman -S --needed base-devel git
-git clone https://github.com/YOUR_USERNAME/artix-desktop-setup.git
+git clone https://github.com/Delovoa/artix-desktop-setup
 cd artix-desktop-setup
 ```
 
