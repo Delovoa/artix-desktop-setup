@@ -33,7 +33,7 @@ Read each step before executing commands.
 
 Go to the official Artix download webpage:
 
-[https://torrents.artixlinux.org/torrents.php]([https://torrents.artixlinux.org/torrents.php])
+[https://torrents.artixlinux.org/torrents.php](https://torrents.artixlinux.org/torrents.php)
 
 Download the Plasma/OpenRC ISO:
 
