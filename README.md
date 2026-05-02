@@ -33,9 +33,12 @@ Read each step before executing commands.
 
 Go to the official Artix download webpage:
 
+[https://torrents.artixlinux.org/torrents.php]([https://torrents.artixlinux.org/torrents.php])
+
 Download the Plasma/OpenRC ISO:
 
-> artix-plasma-openrc-XXXXXXXX-x86_64.iso
+> [!TIP]
+> The file should be named: artix-plasma-openrc-XXXXXXXX-x86_64.iso
 
 ---
 
@@ -43,6 +46,7 @@ Download the Plasma/OpenRC ISO:
 
 Burn the ISO to a USB thub drive.
 
+> [!TIP]
 > I recommend using Balena Etcher.
 
 ---
