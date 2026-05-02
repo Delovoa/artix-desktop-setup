@@ -5,7 +5,8 @@ set -euo pipefail
 # 1. Check Arch News
 # -----------------------------
 if ! informant check; then
-    echo "!! Unread Arch News detected. Read before continuing."
+    echo "!! Unread Arch News detected."
+    echo "Run: informant read --all"
     exit 1
 fi
 
