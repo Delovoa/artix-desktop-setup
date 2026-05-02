@@ -32,10 +32,10 @@ Read each step before executing commands.
 ## 📦 1. Download Artix Linux
 
 Go to the official Artix download webpage:
-  https://torrents.artixlinux.org/torrents.php
 
 Download the Plasma/OpenRC ISO:
-  It should be named "artix-plasma-openrc-XXXXXXXX-x86_64.iso"
+
+> artix-plasma-openrc-XXXXXXXX-x86_64.iso
 
 ---
 
@@ -57,25 +57,26 @@ Burn the ISO to a USB thub drive.
 
 ## 💽 4. Partitioning Btrfs
 
-When you reach partitioning:
-
-### Choose Btrfs
+When you reach partitioning, choose **Btrfs** (not ext4)
 
 ---
 
 ## ⚙️ 5. Complete Installation
 
-Finish the installer
+Finish the installer, reboot, and log in
 
 ---
 
 ## 🔁 6. Clone This Repo
 
+Open a terminal and run the following commands:
+
 ```bash
+sudo pacman -Syu
+sudo pacman -S --needed base-devel git
 git clone https://github.com/YOUR_USERNAME/artix-desktop-setup.git
 cd artix-desktop-setup
 ```
 
 ---
 
-Happy hacking 🚀
