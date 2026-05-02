@@ -14,7 +14,6 @@ if ! grep -q "^\[lib32\]" "$FILE"; then
     echo -e "\n[lib32]\nInclude = /etc/pacman.d/mirrorlist" | sudo tee -a "$FILE" > /dev/null
 else
     echo "==> [lib32] section exists, uncommenting lines..."
-
     sudo sed -i '/^\s*#\s*\[lib32\]/s/^\s*#\s*//' "$FILE"
     sudo sed -i '/^\s*#\s*Include\s*=\s*\/etc\/pacman\.d\/mirrorlist/s/^\s*#\s*//' "$FILE"
 fi
@@ -34,7 +33,6 @@ GPU_INFO=$(lspci | grep -E "VGA|3D|Display" || true)
 
 # AMD GPU
 if echo "$GPU_INFO" | grep -qi "amd\|advanced micro devices"; then
-
     sudo pacman -S --needed --noconfirm \
         mesa \
         vulkan-radeon \
@@ -46,7 +44,6 @@ if echo "$GPU_INFO" | grep -qi "amd\|advanced micro devices"; then
 
 # NVIDIA GPU
 elif echo "$GPU_INFO" | grep -qi "nvidia"; then
-
     sudo pacman -S --needed --noconfirm \
         nvidia \
         nvidia-utils \
@@ -54,7 +51,6 @@ elif echo "$GPU_INFO" | grep -qi "nvidia"; then
 
 # Intel GPU
 elif echo "$GPU_INFO" | grep -qi "intel"; then
-
     sudo pacman -S --needed --noconfirm \
         mesa \
         vulkan-intel \
@@ -64,7 +60,6 @@ elif echo "$GPU_INFO" | grep -qi "intel"; then
 
 # Unknown/Generic GPU
 else
-
     echo "Error: Could not detect GPU!"
     exit 1
 fi
