@@ -39,7 +39,7 @@ Burn the ISO to a USB thub drive.
 
 ---
 
-## 🚀 3. Boot and Start Installer
+## 🚀 3. Initial Boot and Installation
 
 1. Boot from the USB
 2. Launch the installer
