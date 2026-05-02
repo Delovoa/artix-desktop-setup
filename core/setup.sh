@@ -51,3 +51,4 @@ sudo snapper -c root create-config /
 # -----------------------------
 echo "==> Base system setup complete."
 echo "    You can now install optional components (Brave Browser, Steam, etc.)"
+echo "    Make sure to reboot before using your new system"
