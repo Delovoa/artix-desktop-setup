@@ -31,11 +31,8 @@ Read each step before executing commands.
 
 ## 📦 1. Download Artix Linux
 
-Go to the official Artix download webpage:
-
-[https://torrents.artixlinux.org/torrents.php](https://torrents.artixlinux.org/torrents.php)
-
-Download the Plasma/OpenRC ISO:
+1. Go to the official Artix download webpage: [https://torrents.artixlinux.org/torrents.php](https://torrents.artixlinux.org/torrents.php)
+2. Download the Plasma/OpenRC ISO
 
 > [!TIP]
 > The file should be named: artix-plasma-openrc-XXXXXXXX-x86_64.iso
