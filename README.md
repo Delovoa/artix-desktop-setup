@@ -1,13 +1,14 @@
 # Setting Up an Desktop PC using Artix Linux
 
-A reproducible, beginner-friendly **Artix Linux desktop setup** using **KDE Plasma**, **OpenRC**, and **Btrfs snapshots**.
+A highly opinionated, reproducible, beginner-friendly **Artix Linux desktop setup** using **KDE Plasma**, **OpenRC**, and **Btrfs snapshots**.
 
-This repository is designed to help you:
+## 🧰 What You’ll Get
 
-* Install a clean Artix system
-* Set up a modern desktop
-* Enable Btrfs snapshots for easy rollback
-* Reproduce the same system later with minimal effort
+* ⚙️ Clean Artix base
+* 🖥️ KDE Plasma desktop
+* 🔌 OpenRC init system
+* 💾 Btrfs filesystem
+* 🔁 Safe update script
 
 ---
 
@@ -15,17 +16,7 @@ This repository is designed to help you:
 
 This guide assumes basic familiarity with Linux.
 You are responsible for your system.
-Read each step before executing commands.
-
----
-
-## 🧰 What You’ll Get
-
-* ⚙️ Minimal, clean Artix base
-* 🖥️ KDE Plasma desktop
-* 🔌 OpenRC init system
-* 💾 Btrfs filesystem
-* 🔁 Reproducible setup via scripts and configs
+Review each step before executing any commands.
 
 ---
 
@@ -73,6 +64,9 @@ Finish the installer, reboot, and log in
 Open a terminal and run the following commands:
 
 ```bash
+cd ~
+mkdir Code
+cd ~/Code
 sudo pacman -Syu
 sudo pacman -S --needed base-devel git
 git clone https://github.com/Delovoa/artix-desktop-setup
