@@ -49,7 +49,11 @@ Burn the ISO to a USB thub drive.
 
 ## 💽 4. Partitioning Btrfs
 
-When you reach partitioning, choose **Btrfs** (not ext4)
+> [!IMPORTANT]
+> Make sure to select **Btrfs** for your filesystem
+
+> [!CAUTION]
+> Do not use **ext4**
 
 ---
 
