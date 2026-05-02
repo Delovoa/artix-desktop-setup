@@ -73,6 +73,9 @@ Finish the installer, reboot, and log in
 Open a terminal and run the following commands:
 
 ```bash
+cd ~
+mkdir Code
+cd ~/Code
 sudo pacman -Syu
 sudo pacman -S --needed base-devel git
 git clone https://github.com/Delovoa/artix-desktop-setup
