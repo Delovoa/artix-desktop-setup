@@ -63,15 +63,3 @@ else
     echo "Error: Could not detect GPU!"
     exit 1
 fi
-
-# -----------------------------
-# 4. Install GE-Proton
-# -----------------------------
-yay -S proton-ge-custom-bin
-
-# -----------------------------
-# 5. Install GameMode & GameScope
-# -----------------------------
-sudo pacman -S gamemode lib32-gamemode gamescope
-sudo groupadd -r gamemode
-sudo usermod -aG video,audio,input,gamemode $USER
