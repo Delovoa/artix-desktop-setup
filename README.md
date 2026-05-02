@@ -4,11 +4,11 @@ A highly opinionated, reproducible, beginner-friendly **Artix Linux desktop setu
 
 ## 🧰 What You’ll Get
 
-* ⚙️ Clean Artix base
-* 🖥️ KDE Plasma desktop
-* 🔌 OpenRC init system
-* 💾 Btrfs filesystem
-* 🔁 Safe update script
+* ⚙️ Artix Linux (rolling release to get the latest updates)
+* 🖥️ KDE Plasma desktop (for full HDR support)
+* 🔌 OpenRC init system (systemd-free, no age verification)
+* 💾 Btrfs filesystem (easy rollback and recovery in case anything breaks) 
+* 🔁 Safe update script 
 
 ---
 
