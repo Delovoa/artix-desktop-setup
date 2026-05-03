@@ -31,10 +31,10 @@ Review each step before executing any commands.
 
 ## 2. Create Bootable USB
 
-Burn the ISO to a USB thub drive
+Burn the ISO to a USB thumb drive
 
 > [!TIP]
-> I recommend using [Balena Etcher](https://etcher.balena.io/)
+> If you don't know how to do this, I recommend using [Balena Etcher](https://etcher.balena.io/)
 
 ---
 
