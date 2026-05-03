@@ -78,7 +78,7 @@ cd artix-desktop-setup
 
 ---
 
-## 7. Run the Core Setup Scripts
+## 7. Run all of the Core setup scripts
 
 ```bash
 cd 1-core-setup
@@ -88,7 +88,7 @@ sh 2-system-drivers.sh
 
 ---
 
-## 8. Run any of the Optional Setup Scripts you are interested in
+## 8. Run any the Optional Setup Scripts that you need to
 
 ```bash
 cd 2-optional-setup
@@ -97,7 +97,7 @@ sh install-XXXXX.sh
 
 ---
 
-## 9. When you want to upgrade your OS, run the update script
+## 9. Run the update script (every 1-7 days)
 
 ```bash
 cd 3-update-system
@@ -105,6 +105,6 @@ sh update-system.sh
 ```
 > [!WARNING]
 > Do NOT delete the artix-desktop-setup directory<br>
-> Run the update script every 1-7 days to keep your OS up-to-date
+> The update script will keep your OS up-to-date
 
 ---
