@@ -2,7 +2,7 @@
 
 A highly opinionated, reproducible, beginner-friendly Artix Linux desktop setup.
 
-## 🧰 What You’ll Get
+## What You’ll Get
 
 * ⚙️ Artix Linux (Rolling release disto = Latest drivers and application)
 * 🖥️ KDE Plasma desktop (Wayland + Plasma = Best HDR support)
@@ -11,7 +11,7 @@ A highly opinionated, reproducible, beginner-friendly Artix Linux desktop setup.
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This guide assumes basic familiarity with Linux.
 You are responsible for your system.
@@ -19,7 +19,7 @@ Review each step before executing any commands.
 
 ---
 
-## 📦 1. Download Artix Linux
+## 1. Download Artix Linux
 
 1. Go to the official Artix download webpage: [https://torrents.artixlinux.org/torrents.php](https://torrents.artixlinux.org/torrents.php)
 2. Download the Plasma/OpenRC ISO
@@ -29,7 +29,7 @@ Review each step before executing any commands.
 
 ---
 
-## 💿 2. Create Bootable USB
+## 2. Create Bootable USB
 
 Burn the ISO to a USB thub drive
 
@@ -38,7 +38,7 @@ Burn the ISO to a USB thub drive
 
 ---
 
-## 🚀 3. Initial Boot and Installation
+## 3. Initial Boot and Installation
 
 1. Boot from the USB
 2. Launch the installer
@@ -46,7 +46,7 @@ Burn the ISO to a USB thub drive
 
 ---
 
-## 💽 4. Partitioning Btrfs
+## 4. Partitioning Btrfs
 
 > [!IMPORTANT]
 > Make sure to select **Btrfs** for your filesystem
@@ -56,13 +56,13 @@ Burn the ISO to a USB thub drive
 
 ---
 
-## ⚙️ 5. Complete Installation
+## 5. Complete Installation
 
 Finish the installer, reboot, and log in
 
 ---
 
-## 🔁 6. Clone This Repo
+## 6. Clone This Repo
 
 Open a terminal and run the following commands:
 
@@ -78,3 +78,30 @@ cd artix-desktop-setup
 
 ---
 
+## 7. Run the Core Setup Scripts
+
+```bash
+cd 1-core-setup
+sh 1-system-setup.sh
+sh 2-system-drivers.sh
+```
+
+---
+
+## 8. Run any of the Optional Setup Scripts you are interested in
+
+```bash
+cd 2-optional-setup
+sh install-XXXXX.sh
+```
+
+---
+
+## 9. When you want to upgrade your OS, run the update script
+
+```bash
+cd 3-update-system
+sh update-system.sh
+```
+
+---
