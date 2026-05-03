@@ -46,10 +46,10 @@ Burn the ISO to a USB thumb drive
 
 ---
 
-## 4. Partitioning Btrfs
+## 4. Drive Partitioning (Btrfs)
 
 > [!IMPORTANT]
-> Make sure to select **Btrfs** for your filesystem
+> Make sure to choose **Btrfs** for your filesystem
 
 > [!CAUTION]
 > Do not use **ext4**
