@@ -105,6 +105,7 @@ sh update-system.sh
 ```
 > [!WARNING]
 > Do NOT delete the artix-desktop-setup directory when you are done
+
 > Use the update scripts to keep your OS up-to-date
 
 ---
