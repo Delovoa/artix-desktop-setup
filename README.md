@@ -104,8 +104,7 @@ cd 3-update-system
 sh update-system.sh
 ```
 > [!WARNING]
-> Do NOT delete the artix-desktop-setup directory when you are done
-
-> Use the update scripts to keep your OS up-to-date
+> Do NOT delete the artix-desktop-setup directory
+> Run the update script every 1-7 days to keep your OS up-to-date
 
 ---
