@@ -81,7 +81,7 @@ cd artix-desktop-setup
 ## 7. Run all of the Core setup scripts
 
 ```bash
-cd 1-core-setup
+cd ~/Code/artix-desktop-setup/1-core-setup
 sh 1-system-setup.sh
 sh 2-system-drivers.sh
 ```
@@ -93,7 +93,7 @@ sh 2-system-drivers.sh
 For example, if you want to install Brave Browser:
 
 ```bash
-cd 2-optional-setup
+cd ~/Code/artix-desktop-setup/2-optional-setup
 sh install-brave.sh
 ```
 
@@ -102,7 +102,7 @@ sh install-brave.sh
 ## 9. Run the update script (every 1-7 days)
 
 ```bash
-cd 3-update-system
+cd ~/Code/artix-desktop-setup/3-update-system
 sh update-system.sh
 ```
 > [!WARNING]
