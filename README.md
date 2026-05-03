@@ -88,11 +88,13 @@ sh 2-system-drivers.sh
 
 ---
 
-## 8. Run any the Optional Setup Scripts that you need to
+## 8. Run any the Optional setup scripts that you require
+
+For example, if you want to install Brave Browser:
 
 ```bash
 cd 2-optional-setup
-sh install-XXXXX.sh
+sh install-brave.sh
 ```
 
 ---
