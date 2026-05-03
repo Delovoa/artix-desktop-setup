@@ -25,7 +25,7 @@ Review each step before executing any commands.
 2. Download the Plasma/OpenRC ISO
 
 > [!TIP]
-> The file will be named: **artix-plasma-openrc-XXXXXXXX-x86_64.iso**
+> The filename will look something like: **artix-plasma-openrc-XXXXXXXX-x86_64.iso**
 
 ---
 
