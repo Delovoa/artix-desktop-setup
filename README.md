@@ -1,6 +1,6 @@
 # Setting Up an Desktop PC using Artix Linux
 
-A highly opinionated, reproducible, beginner-friendly **Artix Linux desktop setup** using **KDE Plasma**, **OpenRC**, and **Btrfs snapshots**.
+A highly opinionated, reproducible, beginner-friendly Artix Linux desktop setup.
 
 ## 🧰 What You’ll Get
 
