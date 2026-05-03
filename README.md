@@ -49,10 +49,10 @@ Burn the ISO to a USB thumb drive
 ## 4. Drive Partitioning (Btrfs)
 
 > [!IMPORTANT]
-> Make sure to choose **Btrfs** for your filesystem
+> Make sure to change the filesystem to **Btrfs**
 
 > [!CAUTION]
-> Do not use **ext4**
+> Do NOT use the default **ext4**
 
 ---
 
@@ -64,7 +64,7 @@ Finish the installer, reboot, and log in
 
 ## 6. Clone This Repo
 
-Open a terminal and run the following commands:
+Open a terminal, and run the following commands:
 
 ```bash
 cd ~
@@ -103,5 +103,8 @@ sh install-XXXXX.sh
 cd 3-update-system
 sh update-system.sh
 ```
+> [!CAUTION]
+> Do NOT delete the artix-desktop-setup directory when you are done
+> Use the update scripts to keep your OS up-to-date
 
 ---
