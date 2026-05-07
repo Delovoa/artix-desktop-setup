@@ -4,7 +4,7 @@ A highly opinionated, reproducible, beginner-friendly Artix Linux desktop setup.
 
 ## What You’ll Get
 
-* **Artix Linux** (Rolling release disto = Latest drivers and application)
+* **Artix Linux** (Rolling release disto = Latest drivers and applications)
 * **KDE Plasma** desktop (Wayland + Plasma = Best HDR support)
 * **OpenRC** init system (No systemd = No age verification)
 * **Btrfs** filesystem (Snapshots = Easy rollback if something breaks)
@@ -13,8 +13,8 @@ A highly opinionated, reproducible, beginner-friendly Artix Linux desktop setup.
 
 ## Disclaimer
 
-This guide assumes basic familiarity with Linux.
-You are responsible for your system.
+This guide assumes basic familiarity with Linux.  
+You are responsible for your system.  
 Review each step before executing any commands.
 
 ---
