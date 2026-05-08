@@ -21,28 +21,21 @@ cd ..
 rm -rf yay
 
 # -----------------------------
-# 3. Install Zen Kernel
-# -----------------------------
-echo "==> Installing Zen Kernel..."
-sudo pacman -S linux-zen linux-zen-headers
-sudo grub-mkconfig -o /boot/grub/grub.cfg
-
-# -----------------------------
-# 4. Install Informant
+# 3. Install Informant
 # -----------------------------
 echo "==> Installing Informant..."
 yay -S informant
 sudo usermod -aG informant $USER
 
 # -----------------------------
-# 5. Install Snapper
+# 4. Install Snapper
 # -----------------------------
 echo "==> Installing Snapper..."
 sudo pacman -S snapper
 sudo snapper -c root create-config /
 
 # -----------------------------
-# 6. Done
+# 5. Done
 # -----------------------------
 echo "==> Base system setup complete."
 echo "    You can now install optional components (Brave Browser, Steam, etc.)"

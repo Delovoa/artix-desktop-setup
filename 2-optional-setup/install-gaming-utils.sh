@@ -2,7 +2,14 @@
 set -euo pipefail
 
 # -----------------------------
-# 1. Enable lib32
+# 1. Install Zen Kernel
+# -----------------------------
+echo "==> Installing Zen Kernel..."
+sudo pacman -S linux-zen linux-zen-headers
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+# -----------------------------
+# 2. Enable lib32
 # -----------------------------
 
 FILE="/etc/pacman.conf"
@@ -19,12 +26,12 @@ else
 fi
 
 # -----------------------------
-# 2. Update lib32
+# 3. Update lib32
 # -----------------------------
 sudo pacman -Syu
 
 # -----------------------------
-# 3. Install Video Drivers
+# 4. Install 32-bit Video Drivers
 # -----------------------------
 
 GPU_INFO=$(lspci | grep -E "VGA|3D|Display" || true)
@@ -34,32 +41,44 @@ GPU_INFO=$(lspci | grep -E "VGA|3D|Display" || true)
 # AMD GPU
 if echo "$GPU_INFO" | grep -qi "amd\|advanced micro devices"; then
     sudo pacman -S --needed --noconfirm \
-        mesa \
-        vulkan-radeon \
-        mesa-utils \
-        vulkan-tools \
         lib32-mesa \
-        lib32-vulkan-radeon \
-        amd-ucode
+        lib32-vulkan-radeon
 
 # NVIDIA GPU
 elif echo "$GPU_INFO" | grep -qi "nvidia"; then
     sudo pacman -S --needed --noconfirm \
-        nvidia \
-        nvidia-utils \
         lib32-nvidia-utils
 
 # Intel GPU
 elif echo "$GPU_INFO" | grep -qi "intel"; then
     sudo pacman -S --needed --noconfirm \
-        mesa \
-        vulkan-intel \
         lib32-mesa \
-        lib32-vulkan-intel \
-        xf86-video-intel || true
+        lib32-vulkan-intel
 
 # Unknown/Generic GPU
 else
     echo "Error: Could not detect GPU!"
     exit 1
 fi
+
+# -----------------------------
+# 5. Install GE-Proton
+# -----------------------------
+yay -S proton-ge-custom-bin
+
+# -----------------------------
+# 6. Install GameMode & GameScope
+# -----------------------------
+sudo pacman -S gamemode lib32-gamemode gamescope
+sudo groupadd -r gamemode
+sudo usermod -aG video,audio,input,gamemode $USER
+
+# -----------------------------
+# 7. Install Steam
+# -----------------------------
+sudo pacman -S steam steam-devices
+
+# -----------------------------
+# 8. Install Heroic Games Launcher
+# -----------------------------
+yay -S heroic-games-launcher-bin
