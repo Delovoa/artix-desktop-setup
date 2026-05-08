@@ -8,7 +8,7 @@ echo "==> Removing Qwen-TTS..."
 
 eval "$(micromamba shell hook --shell bash)"
 micromamba activate jupyter
-jupyter kernelspec remove qwen3-tts
+jupyter kernelspec remove qwen3-tts -y
 micromamba deactivate
-micromamba env remove -n qwen3-tts
-micromamba clean --all
+micromamba env remove -n qwen3-tts -y
+micromamba clean --all -y

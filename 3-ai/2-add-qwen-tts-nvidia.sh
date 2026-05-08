@@ -6,8 +6,8 @@ set -euo pipefail
 # -----------------------------
 echo "==> Installing Qwen-TTS..."
 
-micromamba create -n qwen3-tts python=3.12 ipykernel -y
 eval "$(micromamba shell hook --shell bash)"
+micromamba create -n qwen3-tts python=3.12 ipykernel -y
 micromamba activate qwen3-tts
 
 pip install -U qwen-tts soundfile ipywidgets
