@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-set -euo pipefail
 
+set -e
 eval "$(micromamba shell hook --shell bash)"
 micromamba activate jupyter
-jupyter lab
-micromamba deactivate
+trap 'micromamba deactivate' EXIT
+jupyter lab --ip=0.0.0.0 --no-browser
