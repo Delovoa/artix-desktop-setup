@@ -83,7 +83,7 @@ cd artix-desktop-setup
 ```bash
 cd ~/Code/artix-desktop-setup/1-core-setup
 sh 1-system-setup.sh
-sh 2-system-drivers.sh
+sh 2-gpu-drivers.sh
 ```
 
 ---
