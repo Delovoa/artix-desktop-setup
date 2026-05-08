@@ -2,10 +2,11 @@
 set -euo pipefail
 
 # -----------------------------
-# 1. Install Micromamba
+# 1. Remove Qwen-TTS
 # -----------------------------
 echo "==> Removing Qwen-TTS..."
 
+eval "$(micromamba shell hook --shell bash)"
 micromamba activate jupyter
 jupyter kernelspec remove qwen3-tts
 micromamba deactivate
