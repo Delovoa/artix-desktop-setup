@@ -21,8 +21,9 @@ if echo "$GPU_INFO" | grep -qi "amd\|advanced micro devices"; then
 # NVIDIA GPU
 elif echo "$GPU_INFO" | grep -qi "nvidia"; then
     sudo pacman -S --needed --noconfirm \
-        nvidia \
-        nvidia-utils
+        nvidia-dkms \
+        nvidia-utils \
+        opencl-nvidia
 
 # Intel GPU
 elif echo "$GPU_INFO" | grep -qi "intel"; then
