@@ -21,18 +21,18 @@ cd ..
 rm -rf yay
 
 # -----------------------------
-# 3. Install Informant
-# -----------------------------
-echo "==> Installing Informant..."
-yay -S informant
-sudo usermod -aG informant $USER
-
-# -----------------------------
-# 4. Install Snapper
+# 3. Install Snapper
 # -----------------------------
 echo "==> Installing Snapper..."
 sudo pacman -S snapper
 sudo snapper -c root create-config /
+
+# -----------------------------
+# 4. Install Informant
+# -----------------------------
+echo "==> Installing Informant..."
+yay -S informant
+sudo usermod -aG informant $USER
 
 # -----------------------------
 # 5. Done
