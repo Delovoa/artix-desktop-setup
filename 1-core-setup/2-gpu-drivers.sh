@@ -37,3 +37,9 @@ else
     echo "Error: Could not detect GPU!"
     exit 1
 fi
+
+# -----------------------------
+# 2. Done
+# -----------------------------
+echo "==> Driver setup complete."
+echo "    Make sure to reboot before using your new system"

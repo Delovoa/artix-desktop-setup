@@ -38,5 +38,4 @@ sudo usermod -aG informant $USER
 # 5. Done
 # -----------------------------
 echo "==> Base system setup complete."
-echo "    You can now install optional components (Brave Browser, Steam, etc.)"
 echo "    Make sure to reboot before using your new system"
