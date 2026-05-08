@@ -4,6 +4,7 @@ set -euo pipefail
 # -----------------------------
 # 1. Install OpenSSH
 # -----------------------------
+echo "==> Installing OpenSSH..."
 sudo pacman -S openssh
 
 # -----------------------------

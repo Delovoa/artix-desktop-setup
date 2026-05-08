@@ -34,6 +34,8 @@ sudo pacman -Syu
 # 4. Install 32-bit Video Drivers
 # -----------------------------
 
+echo "==> Installing 32-Bit Video Drivers..."
+
 GPU_INFO=$(lspci | grep -E "VGA|3D|Display" || true)
 
 # echo "Detected: $GPU_INFO"
@@ -64,11 +66,13 @@ fi
 # -----------------------------
 # 5. Install GE-Proton
 # -----------------------------
+echo "==> Installing GE-Proton..."
 yay -S proton-ge-custom-bin
 
 # -----------------------------
 # 6. Install GameMode & GameScope
 # -----------------------------
+echo "==> Installing GameMode and GameScope..."
 sudo pacman -S gamemode lib32-gamemode gamescope
 sudo groupadd -r gamemode
 sudo usermod -aG video,audio,input,gamemode $USER
@@ -76,9 +80,11 @@ sudo usermod -aG video,audio,input,gamemode $USER
 # -----------------------------
 # 7. Install Steam
 # -----------------------------
+echo "==> Installing Steam..."
 sudo pacman -S steam steam-devices
 
 # -----------------------------
 # 8. Install Heroic Games Launcher
 # -----------------------------
+echo "==> Installing Heroic Games Launcher..."
 yay -S heroic-games-launcher-bin

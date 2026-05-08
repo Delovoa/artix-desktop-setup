@@ -11,6 +11,7 @@ GPU_INFO=$(lspci | grep -E "VGA|3D|Display" || true)
 
 # AMD GPU
 if echo "$GPU_INFO" | grep -qi "amd\|advanced micro devices"; then
+    echo "==> Installing AMD Drivers..."
     sudo pacman -S --needed --noconfirm \
         mesa \
         vulkan-radeon \
@@ -20,6 +21,7 @@ if echo "$GPU_INFO" | grep -qi "amd\|advanced micro devices"; then
 
 # NVIDIA GPU
 elif echo "$GPU_INFO" | grep -qi "nvidia"; then
+    echo "==> Installing NVIDIA Drivers..."
     sudo pacman -S --needed --noconfirm \
         nvidia-dkms \
         nvidia-utils \
@@ -27,6 +29,7 @@ elif echo "$GPU_INFO" | grep -qi "nvidia"; then
 
 # Intel GPU
 elif echo "$GPU_INFO" | grep -qi "intel"; then
+    echo "==> Installing Intel Drivers..."
     sudo pacman -S --needed --noconfirm \
         mesa \
         vulkan-intel \
