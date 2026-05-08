@@ -23,3 +23,9 @@ source ~/.bashrc
 echo "==> Creating Jupyter environment..."
 micromamba create -n jupyter python=3.12 jupyterlab -c conda-forge
 
+# -----------------------------
+# 4. Create Jupyter folder
+# -----------------------------
+cd ~/Documents/
+mkdir Jupyter
+cd ~/Documents/Jupyter
