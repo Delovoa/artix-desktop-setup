@@ -11,7 +11,8 @@ eval "$(micromamba shell hook --shell bash)"
 micromamba activate qwen3-tts
 
 pip install -U qwen-tts
-pip install -U flash-attn --no-build-isolation
 
 python -m ipykernel install --user --name qwen-tts --display-name "QWEN-TTS"
 micromamba deactivate
+
+source ~/.bashrc

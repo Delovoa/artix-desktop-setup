@@ -2,14 +2,23 @@
 set -euo pipefail
 
 # -----------------------------
-# 1. Install Micromamba
+# 1. Install CUDA
+# -----------------------------
+echo "==> Installing CUDA..."
+sudo pacman -S cuda
+export CUDA_HOME=/opt/cuda
+export PATH=$CUDA_HOME/bin:$PATH
+export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
+
+# -----------------------------
+# 2. Install Micromamba
 # -----------------------------
 echo "==> Installing Micromamba..."
 yay -S micromamba-bin
 source ~/.bashrc
 
 # -----------------------------
-# 2. Enable Jupyter environment
+# 3. Enable Jupyter environment
 # -----------------------------
 echo "==> Creating Jupyter environment..."
 micromamba create -n jupyter python=3.12 jupyterlab -c conda-forge
